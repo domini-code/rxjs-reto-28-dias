@@ -11,4 +11,5 @@ export interface User {
   phone: string;
   gender: string;
   location: Location;
+  countryName?: string;
 }
