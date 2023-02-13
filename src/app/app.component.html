@@ -26,13 +26,13 @@
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a [routerLink]="['/']" class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md"
-              aria-current="page">Home</a>
+            <a [routerLink]="['/home']" class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md">Home</a>
 
             <a [routerLink]="['/users']"
               class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Users</a>
 
+            <a [routerLink]="['/search']"
+              class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Search</a>
             <a [routerLink]="['/contact']"
               class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact</a>
           </div>
@@ -59,18 +59,14 @@
     <div class="px-2 pt-2 pb-3 space-y-1">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
       <a href="#" class="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
-        aria-current="page">Dashboard</a>
+        aria-current="page">Home</a>
 
       <a href="#"
-        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Team</a>
+        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Users</a>
 
       <a href="#"
-        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Projects</a>
-
-      <a href="#"
-        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Calendar</a>
+        class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact</a>
     </div>
   </div>
 </nav>
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>

@@ -17,6 +17,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/contact/contact.module').then((m) => m.ContactModule),
   },
+    {
+    path: 'search',
+    loadComponent: () =>
+      import('./shared/components/search/search.component').then((m) => m.SearchComponent)
+  },
   {
     path: '',
     pathMatch: 'full',
@@ -25,7 +30,7 @@ const routes: Routes = [
   {
     path: '**',
     loadComponent: () =>
-      import('./pages/not-found/not-found.module').then((m) => m.NotFoundModule)
+      import('./pages/not-found/not-found.component').then((m) => m.NotFoundComponent)
   }
 
 ];
