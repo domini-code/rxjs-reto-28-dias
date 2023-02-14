@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactModule } from './pages/contact/contact.module';
+import { StartStopComponent } from '@shared/components/start-stop/start-stop.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ContactModule } from './pages/contact/contact.module';
     AppRoutingModule,
     NotFoundComponent,
     ContactModule,
+    StartStopComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
