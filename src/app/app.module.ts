@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactModule } from './pages/contact/contact.module';
 import { StartStopComponent } from '@shared/components/start-stop/start-stop.component';
+import { SingleComponent } from '@shared/components/single/single.component';
+import { StartWithComponent } from '@shared/components/start-with/start-with.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { StartStopComponent } from '@shared/components/start-stop/start-stop.com
     NotFoundComponent,
     ContactModule,
     StartStopComponent,
+    SingleComponent,
+    StartWithComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
