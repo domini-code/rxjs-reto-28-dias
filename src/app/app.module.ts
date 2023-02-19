@@ -1,3 +1,4 @@
+import { CombineLatestAllComponent } from './shared/components/combine-latest-all/combine-latest-all.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +9,7 @@ import { ContactModule } from './pages/contact/contact.module';
 import { StartStopComponent } from '@shared/components/start-stop/start-stop.component';
 import { SingleComponent } from '@shared/components/single/single.component';
 import { StartWithComponent } from '@shared/components/start-with/start-with.component';
+import { FromEventComponent } from '@shared/components/from-event/from-event.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { StartWithComponent } from '@shared/components/start-with/start-with.com
     StartStopComponent,
     SingleComponent,
     StartWithComponent,
+    FromEventComponent,
+    CombineLatestAllComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

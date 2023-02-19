@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { interval, Subject, takeUntil, Observable, tap } from 'rxjs';
+import { interval, Subject, takeUntil, tap } from 'rxjs';
 
 @Component({
   selector: 'app-start-stop',
