@@ -10,6 +10,8 @@ import { StartStopComponent } from '@shared/components/start-stop/start-stop.com
 import { SingleComponent } from '@shared/components/single/single.component';
 import { StartWithComponent } from '@shared/components/start-with/start-with.component';
 import { FromEventComponent } from '@shared/components/from-event/from-event.component';
+import { WithLatestFromComponent } from '@shared/components/with-latest-from/with-latest-from.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { FromEventComponent } from '@shared/components/from-event/from-event.com
     SingleComponent,
     StartWithComponent,
     FromEventComponent,
-    CombineLatestAllComponent
+    CombineLatestAllComponent,
+    WithLatestFromComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

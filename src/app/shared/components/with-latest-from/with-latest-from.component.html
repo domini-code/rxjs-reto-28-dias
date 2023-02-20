@@ -1,0 +1,11 @@
+<div class='relative flex flex-col w-full max-w-sm mx-auto mt-6 overflow-hidden rounded-lg'>
+  <p *ngIf="combinedValue$ | async as combinedValue">Hello, {{ combinedValue }}</p>
+  <form [formGroup]="profileForm">
+    <label for="first-name">First Name: </label>
+    <input id="first-name" type="text" formControlName="firstName"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <label for="last-name">Last Name: </label>
+    <input id="last-name" type="text" formControlName="lastName"
+      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  </form>
+</div>
