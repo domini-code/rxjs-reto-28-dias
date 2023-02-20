@@ -11,7 +11,8 @@ import { SingleComponent } from '@shared/components/single/single.component';
 import { StartWithComponent } from '@shared/components/start-with/start-with.component';
 import { FromEventComponent } from '@shared/components/from-event/from-event.component';
 import { WithLatestFromComponent } from '@shared/components/with-latest-from/with-latest-from.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ConcatWithComponent } from '@shared/components/concat-with/concat-with.component';
 
 
 @NgModule({
@@ -27,6 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FromEventComponent,
     CombineLatestAllComponent,
     WithLatestFromComponent,
+    HttpClientModule,
+    ConcatWithComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
