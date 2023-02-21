@@ -13,6 +13,8 @@ import { FromEventComponent } from '@shared/components/from-event/from-event.com
 import { WithLatestFromComponent } from '@shared/components/with-latest-from/with-latest-from.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConcatWithComponent } from '@shared/components/concat-with/concat-with.component';
+import { SubjectComponent } from '@shared/components/subject/subject.component';
+import { BehaviourSubjectComponent } from '@shared/components/behaviour-subject/behaviour-subject.component';
 
 
 @NgModule({
@@ -30,6 +32,8 @@ import { ConcatWithComponent } from '@shared/components/concat-with/concat-with.
     WithLatestFromComponent,
     HttpClientModule,
     ConcatWithComponent,
+    SubjectComponent,
+    BehaviourSubjectComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
