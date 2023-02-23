@@ -36,6 +36,7 @@ import { ErrorHandleComponent } from '@shared/components/error-handle/error-hand
     SubjectComponent,
     BehaviourSubjectComponent,
     ErrorHandleComponent,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
