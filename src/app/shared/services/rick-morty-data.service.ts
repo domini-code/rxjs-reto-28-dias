@@ -1,5 +1,15 @@
 import { HttpClient } from '@angular/common/http';
-import { catchError, map, Observable, of, throwError, EMPTY, retry } from 'rxjs';
+import {
+  catchError,
+  map,
+  Observable,
+  of,
+  throwError,
+  EMPTY,
+  retry,
+  share,
+  ReplaySubject,
+} from 'rxjs';
 import { Injectable, inject } from '@angular/core';
 import {
   Character,
@@ -39,11 +49,12 @@ export class RickMortyDataService {
 
   getData(): Observable<Character[]> {
     return this.http
-      .get<ResponseInfoResults>('https://rickandmortyapi.com/api/characterEEE')
+      .get<ResponseInfoResults>('https://rickandmortyapi.com/api/character')
       .pipe(
         retry(1),
         map((res: ResponseInfoResults) => res?.results),
-        catchError(()=> EMPTY)
+        share(),
+        catchError(() => EMPTY)
         // catchError(()=> throwError(() => new Error('Ups something happened')))
         // catchError(()=> of([mockCharacter]))
       );

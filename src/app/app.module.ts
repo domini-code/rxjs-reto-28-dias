@@ -16,6 +16,7 @@ import { ConcatWithComponent } from '@shared/components/concat-with/concat-with.
 import { SubjectComponent } from '@shared/components/subject/subject.component';
 import { BehaviourSubjectComponent } from '@shared/components/behaviour-subject/behaviour-subject.component';
 import { ErrorHandleComponent } from '@shared/components/error-handle/error-handle.component';
+import { CachingComponent } from '@shared/components/caching/caching.component';
 
 
 @NgModule({

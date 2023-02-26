@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { UnSubscribeComponent } from '@shared/components/un-subscribe/un-subscribe.component';
+import { AsyncComponent } from '@shared/components/async/async.component';
+import { CachingComponent } from '@shared/components/caching/caching.component';
 
 
 @NgModule({
   declarations: [HomeComponent],
-  imports: [CommonModule, HomeRoutingModule, UnSubscribeComponent],
+  imports: [CommonModule, HomeRoutingModule, AsyncComponent, CachingComponent],
 })
 export class HomeModule {}

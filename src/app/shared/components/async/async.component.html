@@ -1,0 +1,9 @@
+<div class="flex items-center justify-center mt-6">
+  <ul class="text-gray-500 list-disc list-inside pace-y-4 dark:text-gray-400">
+    <li *ngFor="let character of data$ | async">
+    {{character.name}} - {{character.status}}
+    </li>
+  </ul>
+
+</div>
+
