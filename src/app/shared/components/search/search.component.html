@@ -17,11 +17,15 @@
     </div>
   </form>
 </div>
-<ng-container *ngIf="results$ | async as result" >
 
-    <div>
-      {{ result | json }}
-    </div>
+<div class="grid grid-cols-4 gap-4">
+  <div class="p-4 rounded-lg shadow-md" *ngFor="let character of characters$ | async">
+    <img [src]="character.image" alt="{{character.name}}" class="object-cover object-center w-full rounded-t-lg">
+    <h5 class="mb-2 text-2xl font-bold text-gray-900">
+      {{character.name }}
+    </h5>
+  </div>
 
-</ng-container>
+
+</div>
 

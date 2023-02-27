@@ -59,4 +59,14 @@ export class RickMortyDataService {
         // catchError(()=> of([mockCharacter]))
       );
   }
+
+  filterCharacter(name: string): Observable<Character[]>{
+    const API = `https://rickandmortyapi.com/api/character/?name=${name}`;
+    return this.http.get<ResponseInfoResults>(API).pipe(
+      map((res: ResponseInfoResults) => res?.results),
+      catchError(() => EMPTY)
+    );
+  }
+
+
 }
