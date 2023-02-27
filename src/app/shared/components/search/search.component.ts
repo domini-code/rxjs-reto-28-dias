@@ -11,6 +11,7 @@ import {
   filter,
 } from 'rxjs';
 
+import { customOperator } from './custom-operator';
 
 @Component({
   selector: 'app-search',
@@ -26,9 +27,11 @@ export class SearchComponent {
 
   constructor() {
     this.characters$ = this.searchTerm$.pipe(
-      filter((term:string) => term.length >= 4),
-      debounceTime(400),
-      distinctUntilChanged(),
+      customOperator(
+        (term: string) => term.length >= 4,
+        500,
+        (prev, curr) => prev === curr
+      ),
       switchMap((term: string) => this.filterSvc.filterCharacter(term))
     );
   }
