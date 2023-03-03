@@ -5,10 +5,7 @@ import { CommonModule } from '@angular/common';
 import {
   Observable,
   Subject,
-  switchMap,
-  debounceTime,
-  distinctUntilChanged,
-  filter,
+  switchMap
 } from 'rxjs';
 
 import { customOperator } from './custom-operator';
